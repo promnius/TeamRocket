@@ -1,0 +1,190 @@
+(PCB ''
+  (parser
+    (space_in_quoted_tokens on)
+    (string_quote ')
+    (host_cad  'PCB Layout')
+    (host_version  10)
+  )
+  (resolution mil 1000)
+  (structure
+    (boundary(path signal 13.12335   0 0   550 0   550 1000   250 1000   250 1125   100 1125   100 1000   0 1000   0 900   -125 900   -125 750   0 750   0 0   0 0 )
+    )
+    (via  DipViaStyle_0
+    )
+    (grid via   3.25)
+    (grid wire   3.25)
+    (grid place   3.25)
+    (rule(clearance  10))
+    (rule(width  13))
+    (layer Top
+      (type signal)
+    )
+    (layer Bottom
+      (type signal)
+    )
+  )
+  (placement
+    (component DC@Power@Supply@#Benchtop@Test$,@.1inch@pads_X1
+      (place X1 364.66535 719.66535 front 0
+      )
+    )
+    (component AVR@ICSP@Programming@Header@#DIP$,@.1inch@pads_X2
+      (place X2 156.18602 357.47769 front 0
+      )
+    )
+    (component Arduino@FTDI@Header@for@programming@through@bootloader,@.1inch@pads_X3
+      (place X3 411.86975 326.20209 front 270
+      )
+    )
+    (component Serial@Output,@.1inch@pads_U1
+      (place U1 119.60761 637.15879 front 90
+      )
+    )
+    (component ICSP@s.05"@pitch@breakaway@headers@2X3@no@text_X4
+      (place X4 397.34251 884.84251 front 0
+      )
+    )
+    (component FTDI@.05"@pitch@breakaway@headers@1X6@no@text_X5
+      (place X5 159.84251 34.84251 front 0
+      )
+    )
+    (component Power@.05"@pitch@breakaway@headers@1X2@silk@option@2_X6
+      (place X6 -41.09317 827.65616 front 270
+      )
+    )
+    (component Serial@Comm@.05"@pitch@breakaway@headers@1X2@silk@option@2_U2
+      (place U2 177.15879 1047.34251 front 180
+      )
+    )
+  )
+  (library
+    (image DC@Power@Supply@#Benchtop@Test$,@.1inch@pads_X1
+      (outline(path Top  6.56167 137.5 80.23622 137.5 -80.23622 -137.5 -80.23622 -137.5 80.23622 137.5 80.23622)
+      )
+      (pin 0 1 -14.66535 42.83464)
+      (pin 0 2 85.33464 42.83464)
+    )
+    (image AVR@ICSP@Programming@Header@#DIP$,@.1inch@pads_X2
+      (outline(path Top  6.56167 143.71555 160.94094 143.71555 -160.94094 -143.71555 -160.94094 -143.71555 160.94094 143.71555 160.94094)
+      )
+      (pin 0 1 -93.68602 -44.97769)
+      (pin 0 2 6.31397 -44.97769)
+      (pin 0 3 106.31397 -44.97769)
+      (pin 0 4 106.31397 55.02230)
+      (pin 0 5 6.31397 55.02230)
+      (pin 0 6 -93.68602 55.02230)
+    )
+    (image Arduino@FTDI@Header@for@programming@through@bootloader,@.1inch@pads_X3
+      (outline(path Top  6.56167 289.53346 113.03182 289.53346 -113.03182 -289.53346 -113.03182 -289.53346 113.03182 289.53346 113.03182)
+      )
+      (pin 0 1 -248.79790 75.63024)
+      (pin 0 2 -148.79790 75.63024)
+      (pin 0 3 -48.79790 75.63024)
+      (pin 0 4 51.20209 75.63024)
+      (pin 0 5 151.20209 75.63024)
+      (pin 0 6 251.20209 75.63024)
+    )
+    (image Serial@Output,@.1inch@pads_U1
+      (outline(path Top  6.56167 91.46850 82.00918 91.46850 -82.00918 -91.46850 -82.00918 -91.46850 82.00918 91.46850 82.00918)
+      )
+      (pin 0 1 -49.65879 44.60761)
+      (pin 0 2 50.34120 44.60761)
+    )
+    (image ICSP@s.05"@pitch@breakaway@headers@2X3@no@text_X4
+      (outline(path Top  6.56167 84.84251 59.84251 84.84251 -59.84251 -84.84251 -59.84251 -84.84251 59.84251 84.84251 59.84251)
+      )
+      (pin 1 1 -34.84251 -9.84251)
+      (pin 1 2 15.15748 -9.84251)
+      (pin 1 3 65.15748 -9.84251)
+      (pin 1 4 65.15748 40.15748)
+      (pin 1 5 15.15748 40.15748)
+      (pin 1 6 -34.84251 40.15748)
+    )
+    (image FTDI@.05"@pitch@breakaway@headers@1X6@no@text_X5
+      (outline(path Top  6.56167 159.84251 34.84251 159.84251 -34.84251 -159.84251 -34.84251 -159.84251 34.84251 159.84251 34.84251)
+      )
+      (pin 1 1 -109.84251 15.15748)
+      (pin 1 2 -59.84251 15.15748)
+      (pin 1 3 -9.84251 15.15748)
+      (pin 1 4 40.15748 15.15748)
+      (pin 1 5 90.15748 15.15748)
+      (pin 1 6 140.15748 15.15748)
+    )
+    (image Power@.05"@pitch@breakaway@headers@1X2@silk@option@2_X6
+      (outline(path Top  6.56167 47.34251 53.59186 47.34251 -53.59186 -47.34251 -53.59186 -47.34251 53.59186 47.34251 53.59186)
+      )
+      (pin 1 1 -22.34383 -33.90682)
+      (pin 1 2 27.65748 -33.90682)
+    )
+    (image Serial@Comm@.05"@pitch@breakaway@headers@1X2@silk@option@2_U2
+      (outline(path Top  6.56167 47.83989 47.34251 47.83989 -47.34251 -47.83989 -47.34251 -47.83989 47.34251 47.83989 47.34251)
+      )
+      (pin 1 1 -22.84120 -27.65748)
+      (pin 1 2 27.15879 -27.65748)
+    )
+    (padstack DipViaStyle_0
+      (shape(circle Top  35))
+      (shape(circle Bottom  35))
+    )
+    (padstack 0
+      (shape(circle Top  74.80314))
+      (shape(circle Bottom  74.80314))
+    )
+    (padstack 1
+      (shape(circle Top  39.37007))
+      (shape(circle Bottom  39.37007))
+    )
+  )
+  (network
+    (net Net@0
+      (pins U1-2 U2-2)
+    )
+    (net Net@1
+      (pins U1-1 U2-1)
+    )
+    (net Net@2
+      (pins X2-6 X4-6)
+    )
+    (net Net@3
+      (pins X2-5 X4-5)
+    )
+    (net Net@4
+      (pins X2-4 X4-4)
+    )
+    (net Net@5
+      (pins X2-1 X4-1)
+    )
+    (net Net@6
+      (pins X2-2 X4-2)
+    )
+    (net Net@7
+      (pins X2-3 X4-3)
+    )
+    (net Net@8
+      (pins X1-2 X6-2)
+    )
+    (net Net@9
+      (pins X1-1 X6-1)
+    )
+    (net Net@10
+      (pins X3-1 X5-1)
+    )
+    (net Net@11
+      (pins X3-2 X5-2)
+    )
+    (net Net@12
+      (pins X3-3 X5-3)
+    )
+    (net Net@13
+      (pins X3-4 X5-4)
+    )
+    (net Net@14
+      (pins X3-5 X5-5)
+    )
+    (net Net@15
+      (pins X3-6 X5-6)
+    )
+  )
+  (wiring
+  )
+)

@@ -1,0 +1,260 @@
+
+(session 'Breakout Board.ses'
+  (base_design 'Breakout Board.dsn')
+  (placement
+    (resolution mil 1000)
+    (component DC@Power@Supply@#Benchtop@Test$,@.1inch@pads_X1
+      (place X1 364665 719665 front 0)
+    )
+    (component AVR@ICSP@Programming@Header@#DIP$,@.1inch@pads_X2
+      (place X2 156186 357478 front 0)
+    )
+    (component Arduino@FTDI@Header@for@programming@through@bootloader,@.1inch@pads_X3
+      (place X3 411870 326202 front 270)
+    )
+    (component Serial@Output,@.1inch@pads_U1
+      (place U1 119608 637159 front 90)
+    )
+    (component ICSP@s.05"@pitch@breakaway@headers@2X3@no@text_X4
+      (place X4 397343 884843 front 0)
+    )
+    (component FTDI@.05"@pitch@breakaway@headers@1X6@no@text_X5
+      (place X5 159843 34843 front 0)
+    )
+    (component Power@.05"@pitch@breakaway@headers@1X2@silk@option@2_X6
+      (place X6 -41093 827656 front 270)
+    )
+    (component Serial@Comm@.05"@pitch@breakaway@headers@1X2@silk@option@2_U2
+      (place U2 177159 1047343 front 180)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution mil 1000)
+    (parser
+      (host_cad 'PCB Layout')
+      (host_version 10)
+    )
+    (library_out 
+      (padstack DipViaStyle_0
+        (shape
+          (circle Top 35000 0 0)
+        )
+        (shape
+          (circle Bottom 35000 0 0)
+        )
+      )
+    )
+    (network_out 
+      (net Net@0
+        (wire
+          (path Top 13000
+            150000 1075000
+            150000 762500
+            75000 687500
+          )
+        )
+      )
+      (net Net@1
+        (wire
+          (path Top 13000
+            200000 1075000
+            200000 712500
+            75000 587500
+          )
+        )
+      )
+      (net Net@2
+        (wire
+          (path Bottom 13000
+            362500 925000
+            360165 925000
+            325998 890833
+            325998 859848
+            350104 835742
+            453162 835742
+            503913 784991
+            503913 739708
+            251705 487500
+            137500 487500
+            62500 412500
+          )
+        )
+      )
+      (net Net@3
+        (wire
+          (path Top 13000
+            162500 412500
+            243274 493274
+            243274 856980
+          )
+        )
+        (wire
+          (path Bottom 13000
+            412500 925000
+            412500 926210
+            377477 961233
+            347527 961233
+            243274 856980
+          )
+        )
+        (via DipViaStyle_0 243274 856980
+        )
+      )
+      (net Net@4
+        (wire
+          (path Top 13000
+            462500 925000
+            462500 926177
+            427226 961451
+            347445 961451
+            284451 898457
+            284451 846523
+            272273 834345
+            272273 422273
+            262500 412500
+          )
+        )
+      )
+      (net Net@5
+        (wire
+          (path Top 13000
+            362500 875000
+            295951 808451
+            295951 740281
+            316689 719543
+            316689 290089
+            284817 258217
+            237876 258217
+            227637 268456
+            199470 268456
+            189231 258217
+            116783 258217
+            62500 312500
+          )
+        )
+      )
+      (net Net@6
+        (wire
+          (path Bottom 13000
+            213553 234455
+            162500 285508
+            162500 312500
+          )
+        )
+        (via DipViaStyle_0 213553 234455
+        )
+        (wire
+          (path Top 13000
+            412500 875000
+            412500 873151
+            460623 825028
+            463762 825028
+            503918 784872
+            503918 726653
+            395401 618136
+            395401 335683
+            294173 234455
+            213553 234455
+          )
+        )
+      )
+      (net Net@7
+        (wire
+          (path Bottom 13000
+            262500 312500
+            335084 385084
+            335084 530269
+            526918 722103
+            526918 810582
+            462500 875000
+          )
+        )
+      )
+      (net Net@8
+        (wire
+          (path Bottom 13000
+            -75000 799999
+            70435 799999
+            161840 708594
+            396094 708594
+            450000 762500
+          )
+        )
+      )
+      (net Net@9
+        (wire
+          (path Bottom 13000
+            -75000 850000
+            56906 850000
+            144406 762500
+            350000 762500
+          )
+        )
+      )
+      (net Net@10
+        (wire
+          (path Top 13000
+            50000 50000
+            50000 51736
+            198718 200454
+            292700 200454
+            425516 333270
+            425516 513016
+            487500 575000
+          )
+        )
+      )
+      (net Net@11
+        (wire
+          (path Bottom 13000
+            100000 50000
+            100000 63731
+            487500 451231
+            487500 475000
+          )
+        )
+      )
+      (net Net@12
+        (wire
+          (path Bottom 13000
+            150000 50000
+            150000 51296
+            473704 375000
+            487500 375000
+          )
+        )
+      )
+      (net Net@13
+        (wire
+          (path Bottom 13000
+            200000 50000
+            200000 51173
+            423827 275000
+            487500 275000
+          )
+        )
+      )
+      (net Net@14
+        (wire
+          (path Top 13000
+            250000 50000
+            250000 51191
+            373809 175000
+            487500 175000
+          )
+        )
+      )
+      (net Net@15
+        (wire
+          (path Bottom 13000
+            300000 50000
+            462500 50000
+            487500 75000
+          )
+        )
+      )
+    )
+  )
+)
